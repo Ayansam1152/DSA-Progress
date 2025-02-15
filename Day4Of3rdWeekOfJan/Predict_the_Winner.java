@@ -22,7 +22,7 @@ class Predict_the_Winner {
     private int help(int[] a, int i, int j) {
         if (i > j)
             return 0;
-
+        // we are skipping the 2nd player move and assuming his move then calculation 1st player future move.
         int take_i = a[i] + Math.min(help(a, i + 2, j), help(a, i + 1, j - 1));
         int take_j = a[j] + Math.min(help(a, i + 1, j - 1), help(a, i, j - 2));
 
