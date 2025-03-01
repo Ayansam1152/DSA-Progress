@@ -18,7 +18,7 @@ class Count_Number_of_Nice_Subarrays {
         // Finally you have done it bro, I am very proud of myself.
         // this is the default template for solving sliding window using sum method
         int oddCount = 0, count =0,i=0;
-        Map<Integer,Integer> map = new HashMap();
+        Map<Integer,Integer> map = new HashMap<>();
         map.put(0,1);
 
         while(i < nums.length)
